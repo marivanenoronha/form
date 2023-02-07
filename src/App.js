@@ -7,7 +7,7 @@ function App() {
       <div className='containerInput'>
         <input className="input" type="text" placeholder='Digite seu nome...'/>
         <input className="input" type="text" placeholder='Digite seu e-mail...'/>
-        <input className="inputt" type="text" placeholder='Digite uma mensagem...'/>
+        <textarea className="input" type="text" placeholder='Digite uma mensagem...'/>
         <button className="button" type="submit">Enviar</button>
       </div>
     </div>
