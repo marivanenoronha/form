@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#2c2828, #262f49);
+    
+}
+
+.title {
+    font-size: 35px;
+    color: blanchedalmond
+}
+
+.containerInput{
+    margin: 16px 0;
+    width: 290px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.input{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(71, 68, 68);;
+}
+
+.inputt{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.button{
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(71, 68, 68);
+}
+
