@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailsjs from '@emailjs/browser'
 import "./styles.css";
 
 function App() {
@@ -15,9 +16,24 @@ function App() {
       alert("preencha todos os campos");
       return;
     }
-    alert("TESTE")
-  }
 
+    const templateParams= {
+      from_name: name,
+      message: message,
+      email: email
+    }
+
+    emailsjs.send("service_d5qctap", "template_6z9dgsr", templateParams,"OI2qCL_oxpCLl7W-B")
+    .then((response) => {
+      console.log("EMAIL ENVIADO", response.status, response.text)
+      setName("")
+      setEmail("")
+      setMessage("")
+    }, (err) => {
+      console.log("err:", err)
+
+    })
+  }
 
   return (
     <div className="container">
@@ -39,7 +55,6 @@ function App() {
         </div>
       </form>
     </div>
-
   );
          
 }
