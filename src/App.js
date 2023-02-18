@@ -47,7 +47,7 @@ function App() {
               onChange={(e) => setEmail(e.target.value)} value={email}
               />
 
-            <textarea className="input" type="text" placeholder='Digite uma mensagem...'
+            <input className="input" type="text"   placeholder='Digite uma mensagem...'
               onChange={(e) => setMessage(e.target.value)} value={message}
             />
 
